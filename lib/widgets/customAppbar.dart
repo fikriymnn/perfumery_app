@@ -20,7 +20,7 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
         ),
       ),
       leading: Image.asset(
-        'assets/images/askreatif_logo.jpeg',
+        'assets/images/Ask-Scent-Lab-Logo.png',
       ),
       actions: [
         IconButton(
