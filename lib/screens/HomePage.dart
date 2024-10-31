@@ -99,7 +99,8 @@ class _HomePageState extends State<HomePage> {
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 50),
                     child: GridView.builder(
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 4,
                         crossAxisSpacing: 50,
                         mainAxisSpacing: 50,
