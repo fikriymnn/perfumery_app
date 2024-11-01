@@ -10,7 +10,7 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: Color(0xff194737),
-      leadingWidth: 100,
+      leadingWidth: 250,
       centerTitle: true,
       title: Text(
         title,
@@ -19,8 +19,27 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
           fontWeight: FontWeight.bold,
         ),
       ),
-      leading: Image.asset(
-        'assets/images/Ask-Scent-Lab-Logo.png',
+      leading: Row(
+        children: [
+          Flexible(
+            child: Image.asset(
+              'assets/images/Ask-Scent-Lab-Logo.png',
+            ),
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          Flexible(
+            child: Text(
+              "AskScentLab",
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+              ),
+            ),
+          ),
+        ],
       ),
       actions: [
         IconButton(

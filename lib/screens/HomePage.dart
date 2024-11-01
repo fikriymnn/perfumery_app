@@ -51,13 +51,13 @@ class _HomePageState extends State<HomePage> {
         }
       },
       {
-        'icon': 'assets/images/formulaicon.png',
-        'title': 'My Formulas',
+        'icon': 'assets/images/myownformulaIcon.png',
+        'title': 'Formulas',
         'click': () {}
       },
       {
         'icon': 'assets/images/erlenmeyerIcon.png',
-        'title': 'AskScentLab Materials',
+        'title': 'Materials',
         'click': () {
           setState(() {
             _launchUrlMaterial();
@@ -66,7 +66,7 @@ class _HomePageState extends State<HomePage> {
       },
       {
         'icon': 'assets/images/perfumeIcon.png',
-        'title': 'AskScentLab Perfume',
+        'title': 'Perfumes',
         'click': () {
           setState(() {
             _launchUrlProduk();
@@ -75,12 +75,17 @@ class _HomePageState extends State<HomePage> {
       },
       {
         'icon': 'assets/images/micro-lab-icon.png',
-        'title': 'AskScentLab Microlab',
+        'title': 'Microlab',
         'click': () {
           setState(() {
             _launchUrlMicroLab();
           });
         }
+      },
+      {
+        'icon': 'assets/images/formulaicon.png',
+        'title': 'My Orders',
+        'click': () {}
       },
     ];
     return Scaffold(
